@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Puzzle</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-top: 20px; 
+        }
+        canvas { background: #03364a; display: block; margin: 10px 0; }
+        #message { color: white; margin-bottom: 10px; }
+        #controls button { margin: 5px; }
+        #stats { color: white; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div id="message">Click tile or press arrow keys to slide.</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="controls">
+        <button id="newGame">New Game</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div id="stats">
+        Moves: <span id="moveCounter">0</span> |
+        Time: <span id="timer">00:00</span>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
